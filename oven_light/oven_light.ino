@@ -46,17 +46,17 @@ void loop() {
   sensorValue = analogRead(A0);
 
   if (sensorValue > sensorLow) {
-  // turn on the LED on pin 4
-  digitalWrite(4, HIGH);
+    // turn on the LED on pin 4
+    digitalWrite(4, HIGH);
   }
 
-  if (sensorValue < 0.8*sensorHigh) {
-  // play the tone for 20 ms on pin 8
-  tone(8, pitch, 20);
-  // turn off the red LED
-  digitalWrite(4, LOW);
+  if (sensorValue < 0.8 * sensorHigh) {
+    // play the tone for 20 ms on pin 8
+    tone(8, pitch, 20);
+    // turn off the red LED
+    digitalWrite(4, LOW);
   }
 
   // wait for a moment
-  delay(10);  
+  delay(10);
 }
