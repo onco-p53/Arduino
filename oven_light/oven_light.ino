@@ -1,6 +1,7 @@
 /*
   Arduino Oven light temp detector
   Bevan Weir - 27 Dec 2024
+  calibration code from "Project 6 - Light Theremin" by Scott Fitzgerald
 
 */
 
